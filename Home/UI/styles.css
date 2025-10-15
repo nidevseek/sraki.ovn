@@ -398,7 +398,10 @@ p {
   .hero-image img {
       display: none;
   }
-}
+
+  .support-image-wrapper {
+    display: none;
+  }
 
 @media (max-width: 480px) {
   .hero {
@@ -419,6 +422,10 @@ p {
       padding: 15px;
   }
 
+  .support-image-wrapper {
+    display: none;
+  }
+  
   .features-grid,
   .testimonials-grid {
       grid-template-columns: 1fr;
@@ -447,7 +454,6 @@ p {
       color: #ffffffed;
   }
 
-  /* Горизонтальный скролл навигации */
   .nav-links {
     display: flex;
     gap: 1rem;
@@ -459,11 +465,11 @@ p {
   }
 
   .nav-links a {
-    flex-shrink: 0; /* предотвращаем сжатие ссылок */
+    flex-shrink: 0;
   }
 
   .nav-links::-webkit-scrollbar {
-    display: none; /* скрываем скроллбар */
+    display: none;
   }
 }
 
