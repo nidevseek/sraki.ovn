@@ -20,7 +20,12 @@ fetch('tariffs.json')
           <p><strong>Портов:</strong> ${tariff.ports}</p>
           <p>
             <strong>FTP:</strong>
-            <img src="/Home/img/icons/${tariff.ftp ? 'check.png' : 'cross.png'}" class="status-icon">
+          <img 
+              src="${tariff.ftp 
+                  ? 'https://github.com/nidevseek/sraki.ovn/blob/main/Home/img/icons/check.png?raw=true' 
+                  : 'https://github.com/nidevseek/sraki.ovn/blob/main/Home/img/icons/cross.png?raw=true'}" 
+              class="status-icon" 
+              ">
           </p>
         </div>
         <div class="price">${tariff.price}</div>
