@@ -672,11 +672,11 @@ border: 2px solid #2fd2ff;
   }
 
   .nav-links a {
-    flex-shrink: 0; /* предотвращаем сжатие ссылок */
+    flex-shrink: 0;
   }
 
   .nav-links::-webkit-scrollbar {
-    display: none; /* скрываем скроллбар */
+    display: none; 
   }
 }
 
