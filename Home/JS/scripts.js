@@ -1,41 +1,3 @@
-fetch('tariffs.json')
-  .then(response => response.json())
-  .then(tariffs => {
-    const container = document.querySelector('.tariffs-container');
-
-    tariffs.forEach(tariff => {
-      const card = document.createElement('div');
-      card.className = 'tariff-card';
-
-      card.innerHTML = `
-        <div class="location">
-          <img src="${tariff.location.flag}" alt="${tariff.location.country}" />
-          <span>${tariff.location.country}</span>
-        </div>
-        <h3>${tariff.name}</h3>
-        <div class="tariff-features">
-          <p><strong>ОЗУ:</strong> ${tariff.ram}</p>
-          <p><strong>GPU:</strong> ${tariff.gpu}</p>
-          <p><strong>Диск:</strong> ${tariff.disk}</p>
-          <p><strong>Портов:</strong> ${tariff.ports}</p>
-          <p>
-            <strong>FTP:</strong>
-          <img 
-              src="${tariff.ftp 
-                  ? 'https://github.com/nidevseek/sraki.ovn/blob/main/Home/img/icons/check.png?raw=true' 
-                  : 'https://github.com/nidevseek/sraki.ovn/blob/main/Home/img/icons/cross.png?raw=true'}" 
-              class="status-icon" 
-              ">
-          </p>
-        </div>
-        <div class="price">${tariff.price}</div>
-      `;
-
-      container.appendChild(card);
-    });
-  })
-  .catch(error => console.error('Ошибка загрузки тарифов:', error));
-
 const words = [
     "Серверов",
     "Ботов",
@@ -60,3 +22,17 @@ function changeWord() {
 }
 
 setInterval(changeWord, 2500);
+
+const buttons = document.querySelectorAll(".tab-btn");
+const slider = document.querySelector(".slider-bg");
+
+buttons.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    buttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    slider.style.left = `${index * 50}%`;
+    document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+    document.getElementById(btn.dataset.tab).classList.add("active");
+  });
+});
