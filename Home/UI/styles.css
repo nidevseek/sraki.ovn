@@ -528,12 +528,14 @@ p {
 }
 
 .footer-btn.discord {
+    cursor: pointer;
     background-color: #242b49;
     border-radius: 17px;
     border: 2px solid #6d78ef;
 }
 
 .footer-btn.telegram {
+  cursor: pointer;
   background-color: #2b6763;
   border-radius: 17px;
   border: 2px solid #5edcff;
@@ -567,6 +569,7 @@ border: 2px solid #2fd2ff;
 }
 
 .footer-logo a {
+  cursor: pointer;
   color: #ff8800
 }
 
