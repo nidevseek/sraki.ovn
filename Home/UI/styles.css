@@ -565,13 +565,13 @@ p {
 }
 
 .footer-btn.discord:hover {
-  background-color: #343f6d;
+  background-color: #505fff66;
   border-radius: 25px;
   border: 2px solid #505eff;
 }
 
 .footer-btn.telegram:hover {
-background-color: #3a958f;
+background-color: #2fd2ff77;
 border-radius: 25px;
 border: 2px solid #2fd2ff;
 }
@@ -697,11 +697,11 @@ border: 2px solid #2fd2ff;
   }
 
   .nav-links a {
-    flex-shrink: 0; /* предотвращаем сжатие ссылок */
+    flex-shrink: 0;
   }
 
   .nav-links::-webkit-scrollbar {
-    display: none; /* скрываем скроллбар */
+    display: none;
   }
 }
 
