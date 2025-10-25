@@ -339,10 +339,35 @@ body, html {
   padding: 20px;
   border-radius: 15px;
   width: 240px;
-  height: 350px;
+  height: 450px;
   flex-shrink: 0;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buy {
+  background: linear-gradient(90deg, #ff8400, #ff4000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other {
+  color: #aaaaaa;
+  font-size: 15px;
+}
+
+
+.other a {
+  color: #ff8800;
+  font-size: 15px;
 }
 
 .tab-content {
@@ -528,14 +553,12 @@ p {
 }
 
 .footer-btn.discord {
-    cursor: pointer;
     background-color: #242b49;
     border-radius: 17px;
     border: 2px solid #6d78ef;
 }
 
 .footer-btn.telegram {
-  cursor: pointer;
   background-color: #2b6763;
   border-radius: 17px;
   border: 2px solid #5edcff;
@@ -569,7 +592,6 @@ border: 2px solid #2fd2ff;
 }
 
 .footer-logo a {
-  cursor: pointer;
   color: #ff8800
 }
 
@@ -675,11 +697,11 @@ border: 2px solid #2fd2ff;
   }
 
   .nav-links a {
-    flex-shrink: 0;
+    flex-shrink: 0; /* предотвращаем сжатие ссылок */
   }
 
   .nav-links::-webkit-scrollbar {
-    display: none; 
+    display: none; /* скрываем скроллбар */
   }
 }
 
