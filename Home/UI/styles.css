@@ -202,6 +202,10 @@ body, html {
   transition: var(--transition);
 }
 
+.feature-card:hover .feature-icon {
+  background: #3c3c3c;
+}
+
 .testimonials {
   padding: 80px 0;
   background: var(--background-blue);
